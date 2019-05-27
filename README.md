@@ -28,7 +28,7 @@ live2d
 
 ### 原项目地址：https://github.com/Ben02/hexo-theme-Anatole
 
-### Demo : https://www.autokaka.github.io
+### Demo : https://autokaka.github.io
 
 ------
 
