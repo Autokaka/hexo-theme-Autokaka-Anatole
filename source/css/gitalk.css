@@ -1,0 +1,41 @@
+.gt-container .gt-header-textarea , .gt-header-preview {
+    border-radius: 6px !important;
+    border: 0px !important;
+    background-color: #f0f0f0 !important;
+    font-family: 'Open Sans Condensed',"Microsoft Yahei" !important;
+}
+
+.markdown-body p, .markdown-body blockquote, .markdown-body ul, .markdown-body ol, .markdown-body dl, .markdown-body table, .markdown-body pre , .gt-container .gt-counts{
+    font-family: 'IBM 3270','Open Sans Condensed',"Microsoft Yahei" !important;
+}
+
+.gt-container .gt-ico-github svg {
+    fill: #757575 !important;
+}
+
+.gt-container .gt-meta {
+    margin: 2em !important;
+  }
+  
+.gt-container .gt-avatar-github {
+    margin-top: 0.5em !important;
+    margin-left: 2em !important;
+}
+
+.gt-container .gt-avatar {
+    margin-top: 0.5em !important;
+    margin-left: 2em !important;
+}
+
+.gt-container .gt-header-comment {
+    flex: 0.95 !important;
+    margin-left: 0.75em !important;
+    margin-right: 1em;
+}
+
+.gt-container .gt-comment-content {
+    flex: 0.95 !important;
+    border-radius: 6px !important;
+    margin-left: 0.75em !important;
+    margin-right: 1em;
+}

@@ -25,6 +25,9 @@
     .back_btn
       li
         if is_post()
-          a.fa.fa-chevron-left(onclick="window.history.go(-1)") 
+          a.fa.fa-chevron-left(onclick="window.history.go(-1)",style="margin-right:-3em;") 
         else
-          a.fa.fa-chevron-left(onclick="window.history.go(-1)",style="display:none;") 
+          a.fa.fa-chevron-left(onclick="window.history.go(-1)",style="display:none;")
+    if theme.enable_avatar
+      .avatar
+        img(src=theme.avatar)

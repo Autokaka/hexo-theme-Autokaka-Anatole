@@ -1,7 +1,7 @@
 {
-  "name": "hexo-theme-Anatole",
+  "name": "hexo-theme-Autokaka-Anatole",
   "version": "1.0.0",
-  "description": "A white and simple hexo theme, originated from a Farbox theme",
+  "description": "A modified theme from Caicai, Ben & Core",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,9 +18,13 @@
   "author": "Ben Wong",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Ben02/hexo-theme-Anatole/issues"
+    "url": "https://github.com/Autokaka/hexo-theme-Anatole/issues"
   },
-  "homepage": "https://github.com/Ben02/hexo-theme-Anatole#readme",
+  "homepage": "https://github.com/Autokaka/hexo-theme-Anatole#readme",
   "devDependencies": {
+  }, 
+  "scripts": {
+    "debug": "hexo clean && hexo s --debug",
+    "deploy": "hexo clean && hexo generate && hexo deploy && node ./comment.js"
   }
 }

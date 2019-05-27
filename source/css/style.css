@@ -333,9 +333,7 @@ a:hover, a:active {
 }
 
 .pagination {
-  margin: 30px;
-  padding: 0px 0 56px 0;
-  border-bottom: 1px solid #f2f2f2;
+  margin-right: 2em;
 }
 .pagination ul {
   list-style: none;
@@ -537,23 +535,24 @@ a:hover, a:active {
 
 /* 按钮样式 */
 a.btn {
-  color: #868686;
+  color: white;
   font-weight: 400;
+  margin-left: 2em;
 }
 
 .btn {
   display: inline-block;
   position: relative;
   outline: 0;
-  color: rgba(0, 0, 0, 0.44);
   background: transparent;
   font-size: 14px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px;
   white-space: nowrap;
   font-weight: 400;
+  background-color: #6190E8;
   font-style: normal;
   border-radius: 999em;
 }
@@ -692,4 +691,5 @@ a.btn {
   .share {
     display: grid;
   }
+
 }

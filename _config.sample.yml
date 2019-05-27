@@ -1,29 +1,164 @@
-# Fork ben02的主题进行修改
-# https://github.com/Ben02/hexo-theme-Anatole
-
-#
-# !!! 需复制一份重命名为_config.yml  才能正常使用主题 !!! 
-#
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+## 声明: 基于Caicai, Ben, Core的Anatole主题修改版本
 
 
-keywords: Hexo,HTML,CSS,android,Linux
-author: Author Name,name@example.com
-description: Nothing lasts forever.
-avatar: /images/favicon.ico
+
+# 基础配置
+## 是否显示右上角的头像
+enable_avatar: true
+## 右上角头像路径
+avatar: 
+## 左侧logo路径, 本地路径请用->    /images/[你的图片]
+logo_url: 
+title: Autokaka
+subtitle: 
+description: Everything that kills me makes me feel alive.
+keywords: Android, Java, C++, Linux, Algorithm, Studio
+author: Autokaka, qq1909698494@gmail.com
+language:
+timezone:
+## 是否显示每篇文章下的分享页面
+enable_share_in_post_page: false
+# 动态背景
+## Canvas-nest
+canvas_nest: true
+
+
+
+# 网站统计
+## 密钥修改成自己的
+## Baidu
+### BaiduAnalytics校验
+baidu_analytics: 
+
+## Google
+### GoogleHTML校验
+google_site_verification: 
+### GoogleAnalytics校验
+google_analytics: 
+
+
+
+# hexo sitemap
+## Google
+sitemap:
+  path: sitemap.xml
+## Baidu
+baidusitemap:
+  path: baidusitemap.xml
+
+
 
 # Social Accounts
 # 整个url
+twitter: 
 github: 
-mail: 
+mail:
 zhihu: 
-QQ: 
+weibo: 
+QQ:
 
-# 评论
+
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: 
+root: /
+permalink: :title.html
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+  
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+## index配置
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+  
+## archive配置
+archive_generator:
+  path: ''
+  per_page: 10
+  yearly: true
+  monthly: true
+  daily: true
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: anatole
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repository: 
+  branch: master 
+
+
+
+# 评论系统(注意, 只能使用一种)
+## gitalk配置(推荐用这个)
+gitalk:
+  enable: true
+  owner: 
+  repo: ## yourid.github.io
+  admin: ## yourid
+  clientID: 
+  clientSecret: 
+## duoshuo配置
 duoshuo: 
+## disqus配置
 disqus: 
+## gentie配置
 gentie: 
-
-# Valine comments : https://valine.js.org
+# Valine配置(https://valine.js.org)
 valine:
   enable: false # if you want use valine, please set enable: true
   appid:  # your leancloud appid
@@ -32,4 +167,37 @@ valine:
   verify: false # true/false:verify code
   avatar: mm # avatar style https://github.com/xCss/Valine/wiki/avatar-setting-for-valine
   placeholder: Just go go # comment box placeholder
+
+
+
+# live_2d
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    use: live2d-widget-model-koharu
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true
+  react:
+    opacity: 0.5
+
+
+
+# 打赏功能
+# 你的付款码链接需要在线的链接
+#是否开启打赏功能
+donate: 
+  enable: true
+  # 无法配置, 接口无用
+  Alipay_QRCode: images/AliPayQR.png
+  WeChat_QRCode: images/WeChatQR.png
 

@@ -12,7 +12,6 @@ if theme.duoshuo
              || document.getElementsByTagName('body')[0]).appendChild(ds);
         })();
 
-
 if theme.disqus
     a#comments
     #disqus_thread
@@ -33,7 +32,31 @@ if theme.gentie
     #cloud-tie-wrapper.cloud-tie-wrapper
     script(src='https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js')
     script.
-        var cloudTieConfig = { url: document.location.href, sourceId: '#{page.path}', productKey: '#{theme.gentie}', target: 'cloud-tie-wrapper' };var yunManualLoad = true;Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
+        var cloudTieConfig = { 
+            url: document.location.href, 
+            sourceId: '#{page.path}', 
+            productKey: '#{theme.gentie}', 
+            target: 'cloud-tie-wrapper' };
+        var yunManualLoad = true;
+        Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
+
+if theme.gitalk
+    if theme.gitalk.enable == true
+        link(rel="stylesheet", href='https://unpkg.com/gitalk/dist/gitalk.css')
+        link(rel="stylesheet", href='/css/gitalk.css')
+        div(id='gitalk-container')
+        script(src="/js/md5.min.js")
+        script(src='https://unpkg.com/gitalk/dist/gitalk.min.js')
+        script.
+            var gitalk = new Gitalk({
+                clientID: '#{theme.gitalk.clientID}',
+                clientSecret: '#{theme.gitalk.clientSecret}',
+                id: md5(location.pathname),
+                repo: '#{theme.gitalk.repo}',
+                owner: '#{theme.gitalk.owner}',
+                admin: '#{theme.gitalk.admin}'
+            })
+            gitalk.render('gitalk-container');
 
 if theme.youyan
     a#comments
