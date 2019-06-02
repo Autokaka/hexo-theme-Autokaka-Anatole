@@ -18,6 +18,8 @@ live2d
 
 网站压缩, 加速页面和组件加载速度(请在根目录npm install hexo-neat --save)
 
+hexo-admin: (只针对Windows用户)请在根目录放入hexo-deploy.bat
+
 **修改:** 
 
 博客文章结构修改, 使博客相关文章更容易产生在搜索引擎搜索结果前列(可能玄学)
